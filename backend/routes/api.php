@@ -19,3 +19,8 @@ Route::middleware('secret.admin')->group(function () {
     
     // اینجا بعداً مسیرهای ویرایش و حذف رو هم اضافه می‌کنیم
 });
+
+
+Route::get('/products', function() {
+    return \App\Models\Product::all();
+});
